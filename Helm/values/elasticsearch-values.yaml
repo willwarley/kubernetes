@@ -1,0 +1,6 @@
+service:
+  name: elasticsearch-service
+  type: LoadBalancer
+deployment:
+  name: elasticsearch-deployment
+  replicaCount: 3

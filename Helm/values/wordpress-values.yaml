@@ -1,0 +1,50 @@
+image:
+  repository: wordpress
+  tag: latest
+  pullPolicy: Always
+
+service:
+  name: wordpress-service
+  type: LoadBalancer
+  externalPort: 80
+  internalPort: 80
+
+ingress:
+  enabled: false
+  annotations: {}
+  path: /
+  hosts:
+    - wordpress.local
+  tls: []
+
+replicaCount: 1
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+persistence:
+  enabled: true
+  accessMode: ReadWriteOnce
+  size: 8Gi
+
+database:
+  type: mysql
+  mysql:
+    image: mysql:5.7
+    mysqlRootPassword: root
+    mysqlUser: wordpress
+    mysqlPassword: wordpress
+    mysqlDatabase: wordpress
+
+wordpressUsername: admin
+wordpressPassword: admin
+wordpressEmail: user@example.com
+wordpressFirstName: FirstName
+wordpressLastName: LastName
+wordpressBlogName: Blog
+

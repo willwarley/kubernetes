@@ -1,0 +1,6 @@
+service:
+  name: mysql-service
+  type: LoadBalancer
+deployment:
+  name: mysql-deployment
+  replicaCount: 3

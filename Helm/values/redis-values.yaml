@@ -1,0 +1,6 @@
+service:
+  name: redis-service
+  type: LoadBalancer
+deployment:
+  name: redis-deployment
+  replicaCount: 3

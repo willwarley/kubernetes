@@ -1,0 +1,6 @@
+service:
+  name: postgres-service
+  type: LoadBalancer
+deployment:
+  name: postgres-deployment
+  replicaCount: 3

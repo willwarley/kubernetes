@@ -1,0 +1,6 @@
+service:
+  name: mongodb-service
+  type: LoadBalancer
+deployment:
+  name: mongodb-deployment
+  replicaCount: 3

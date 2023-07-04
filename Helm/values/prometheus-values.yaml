@@ -1,0 +1,6 @@
+service:
+  name: prometheus-service
+  type: LoadBalancer
+deployment:
+  name: prometheus-deployment
+  replicaCount: 3

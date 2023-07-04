@@ -1,0 +1,6 @@
+service:
+  name: rabbitmq-service
+  type: LoadBalancer
+deployment:
+  name: rabbitmq-deployment
+  replicaCount: 3

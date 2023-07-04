@@ -1,0 +1,6 @@
+service:
+  name: nginx-service
+  type: LoadBalancer
+deployment:
+  name: nginx-deployment
+  replicaCount: 3

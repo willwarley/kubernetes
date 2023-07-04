@@ -1,0 +1,6 @@
+service:
+  name: grafana-service
+  type: LoadBalancer
+deployment:
+  name: grafana-deployment
+  replicaCount: 3
